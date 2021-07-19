@@ -1,0 +1,9 @@
+- name: RegEx Issue Labeler
+  uses: github/issue-labeler@v2.4
+  with:
+    # The GITHUB_TOKEN secret
+    repo-token: 
+    # Path to the labeler.yml configuration file
+    configuration-path: 
+    # Controls if versioned regex templates are being used
+    enable-versioned-regex: 
