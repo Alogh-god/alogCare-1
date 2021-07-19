@@ -1,28 +1,23 @@
 version: 2.1
-
 jobs:
-  test:
+  build:
+    working_directory: ~/repo
     docker:
-      - image: cimg/node:15.1
+      - image: circleci/node:10.16.3
     steps:
       - checkout
+      - run:
+          name: Update NPM
+          command: "sudo npm install -g npm@5"
       - restore_cache:
-          # See the configuration reference documentation for more details on using restore_cache and save_cache steps
-          # https://circleci.com/docs/2.0/configuration-reference/?section=reference#save_cache
-          keys:
-            - node-deps-v1-{{ .Branch }}-{{checksum "package-lock.json"}}
+          key: dependency-cache-{{ checksum "package-lock.json" }}
       - run:
-          name: install packages
-          command: npm ci
+          name: Install Dependencies
+          command: npm install
       - save_cache:
-          key: node-deps-v1-{{ .Branch }}-{{checksum "package-lock.json"}}
+          key: dependency-cache-{{ checksum "package-lock.json" }}
           paths:
-            - ~/.npm
+            - ./node_modules
       - run:
-          name: Run Tests
+          name: Run tests
           command: npm run test
-
-workflows:
-  orb-free-workflow:
-    jobs:
-      - test
