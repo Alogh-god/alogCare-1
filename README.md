@@ -35,7 +35,8 @@ A simple way to connect needy people and people who want to help.
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+
+Helping a needy one should be the top priority of a human. We will be the trustee platform to connect you with the people who are expecting a small help from you. We maintain transparency and we believe in creating a world of  cooperation.
 
 Here's why:
 * Your time should be focused on creating something amazing. A project that solves a problem and helps others
@@ -49,9 +50,8 @@ A list of commonly used resources that I find helpful are listed in the acknowle
 ### Built With
 
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-* [Laravel](https://laravel.com)
+* [Next Js](https://getbootstrap.com)
+* [Node Js](https://jquery.com)
 
 
 
@@ -137,6 +137,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## Contact
 
  [@Abhishek Lwagun](https://twitter.com/AbhishekLwagun) - abhisheklwagun1@gmail.com
+ 
+ ## Try It Out
 
 Project Link: [https://github.com/Alogh-god/alogCare](https://github.com/Alogh-god/alogCare)
 
